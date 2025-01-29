@@ -3,70 +3,112 @@ body {
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
-    max-width: 500px;
-    margin: 50px auto;
+}
+
+.container {
+    max-width: 90%; /* Adjusted for smaller screens */
+    margin: 20px auto; /* Reduced margin for smaller screens */
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-top: 10px solid orange;
-  }
-  
-  .header {
+    padding: 15px; /* Reduced padding for smaller screens */
+    border-top: 12px solid orange;
+}
+
+.header {
     text-align: center;
     color: green;
-  }
-  
-  .header h1 {
+}
+
+.header h1 {
     font-size: 24px;
-  }
-  
-  .header p {
+}
+
+.header p {
     font-size: 16px;
     color: #ff9933;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     font-weight: bold;
-    margin: 10px 0 5px;
-  }
-  
-  input, select, button {
+    margin: 10px 0 7px;
+}
+
+input, select, button {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
-  }
-  
-  button {
+}
+
+button {
     background-color: green;
     color: white;
     font-weight: bold;
     cursor: pointer;
     border: none;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #004d00;
-  }
-  
-  .error {
+}
+
+.error {
     color: red;
     font-size: 14px;
     display: none;
     margin-top: -10px;
-  }
-  
-  .footer {
+}
+
+.footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 16px;
     font-size: 14px;
     color: #666;
-  }
-  
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 10px auto; /* Further reduced margin */
+        padding: 10px; /* Further reduced padding */
+    }
+
+    .header h1 {
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+
+    .header p {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    input, select, button {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+
+    .footer {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 18px; /* Even smaller font size for very small screens */
+    }
+
+    .header p {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+
+    input, select, button {
+        padding: 8px; /* Reduced padding for very small screens */
+    }
+
+    .footer {
+        font-size: 10px; /* Even smaller font size for very small screens */
+    }
+}
