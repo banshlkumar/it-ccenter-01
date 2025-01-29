@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form - IT Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>IT Center - સ્ટૂડન્ટ ફોર્મ</h1>
+      <p>સર્કારમણી સસ્તા અને પ્રોફેશનલ સેવાઓ!</p>
+    </div>
+    <form id="studentForm">
+      <label for="name">Name (નામ):</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <span id="nameError" class="error">Name is required (નામ આવશ્યક છે).</span>
+
+      <label for="email">Email (ઇમેલ):</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <span id="emailError" class="error">Valid email is required (સાચી ઇમેલ જરૂરી છે).</span>
+
+      <label for="phone">Phone Number (મોબાઇલ નંબર):</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number">
+      <span id="phoneError" class="error">Phone number is required (મોબાઇલ નંબર જરૂરી છે).</span>
+
+      <label for="course">Course (કોર્સ):</label>
+      <select id="course">
+        <option value="">Select a course (કોર્સ પસંદ કરો)</option>
+        <option value="web">Web Development</option>
+        <option value="python">Python Programming</option>
+        <option value="java">Java Backend</option>
+      </select>
+      <span id="courseError" class="error">Please select a course (કોર્સ પસંદ કરો).</span>
+
+      <button type="submit">Submit (સબમિટ કરો)</button>
+    </form>
+  </div>
+  <div class="footer">
+    <p>&copy; 2025 IT Center. All Rights Reserved.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
